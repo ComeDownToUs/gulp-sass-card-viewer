@@ -20,9 +20,9 @@ gulp.task('test', function(){
     .pipe(mocha({reporter: 'nyan'}))
 })
 
-gulp.task('js-concat', function() {
+gulp.task('js-process', function() {
     return gulp.src("js/*.js")
-        .pipe(concat('scripts.js'))
+        //.pipe(concat('scripts.js'))
         .pipe(gulp.dest("app/js"))
         .pipe(browserSync.stream());
 });
@@ -34,7 +34,7 @@ gulp.task('serve', ['sass'], function() {
     });
     gulp.watch("sass/*.scss", ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
-    gulp.watch("js/**/*.js", ["linter", "js-concat"]).on('change', browserSync.reload);;
+    gulp.watch("js/**/*.js", ["linter", "test", "js-process"]).on('change', browserSync.reload);;
 });
 
 // Compile sass into CSS & auto-inject into browsers
