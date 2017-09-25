@@ -10,8 +10,8 @@ var mocha = require('gulp-mocha')
 
 gulp.task("linter", function() {
   gulp
-    .src(["app/js/**/*.js"])
-    .pipe(jshint())
+    .src(["app/js/scripts.js"])
+    .pipe(jshint({asi: true}))
     .pipe(jshint.reporter("jshint-stylish", { beep: true }))
 });
 
@@ -21,8 +21,8 @@ gulp.task('test', function(){
 })
 
 gulp.task('js-process', function() {
-    return gulp.src("js/*.js")
-        //.pipe(concat('scripts.js'))
+    return gulp.src(["js/buildDOM.js","js/index.js","js/*.js"])
+        .pipe(concat('scripts.js'))
         .pipe(gulp.dest("app/js"))
         .pipe(browserSync.stream());
 });

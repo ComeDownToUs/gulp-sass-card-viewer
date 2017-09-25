@@ -1,8 +1,89 @@
+.card {
+  background-color: red;
+  min-width: 320px;
+  max-width: 420px; }
+  .card .card__heading {
+    height: 50%;
+    max-height: 350px;
+    background-color: #ddd;
+    padding: 16px;
+    background-position: 20% 100%;
+    background-repeat: no-repeat;
+    background-size: auto 80%; }
+    .card .card__heading .card__options button {
+      width: 100%;
+      border: 1px solid black;
+      font-size: 24px; }
+      .card .card__heading .card__options button:focus {
+        outline: none; }
+    .card .card__heading .card__options .drop-button, .card .card__heading .card__options .dropdown-content {
+      width: 100%;
+      background-color: #ddd;
+      text-align: center; }
+    .card .card__heading .card__options .drop-button {
+      padding: 8px; }
+    .card .card__heading .card__options .dropdown-content {
+      padding: 2px 0px; }
+    .card .card__heading .card__options button.dropdown-option {
+      background-color: #fff;
+      color: black; }
+  .card .data {
+    position: relative; }
+    .card .data > .data__title {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      padding: 16px 16px 4px 16px; }
+    .card .data > .data__position {
+      font-size: 18px;
+      color: white;
+      padding: 4px 16px 16px 16px; }
+    .card .data .data__icon {
+      position: absolute;
+      top: -56px;
+      right: 32px;
+      background-color: blue;
+      height: 112px;
+      width: 112px;
+      border-radius: 56px;
+      content: ''; }
+    .card .data .statistics {
+      padding: 16px 0px; }
+    .card .data .statistic {
+      background-color: #ccc;
+      margin: 4px 16px;
+      display: flex; }
+      .card .data .statistic .statistic__label, .card .data .statistic .statistic__value {
+        padding: 8px;
+        display: inline-block;
+        flex: 5; }
+      .card .data .statistic .statistic__value {
+        font-weight: bold;
+        text-align: right;
+        flex: 3; }
+
+.image-4148 {
+  background-image: url("/images/p4148.png"); }
+
+.image-2064 {
+  background-image: url("/images/p2064.png"); }
+
+.image-4916 {
+  background-image: url("/images/p4916.png"); }
+
+.image-4246 {
+  background-image: url("/images/p4246.png"); }
+
+.image-8983 {
+  background-image: url("/images/p8983.png"); }
+
+.dropdown-content {
+  display: none; }
+
+.dropdown-content.show {
+  display: block; }
+
 body {
-  font-size: 20px !important; }
-  body p {
-    color: green;
-    background-color: blue;
-    font-size: 12px; }
-  body h1 {
-    color: red !important; }
+  background-color: #bbb;
+  margin: 0px;
+  font-family: sans-serif; }

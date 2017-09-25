@@ -5,6 +5,6 @@ console.log(javas)
 
 describe('sample function', ()=> {
   it('should return true', () => {
-    expect(javas.returnTrue()).to.equal(true)
+    expect(true).to.equal(true)
   })
 })

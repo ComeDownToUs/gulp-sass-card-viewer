@@ -5,12 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/styles.css" rel="stylesheet" />
-    <script src="js/y.js"></script>
+    <script src="data/player-stats.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
 
 <div id="example">
-  <h1>Hello world!</h1>
+  <div class="card">
+    <div class="card__heading image-rooney">
+      <div class="card__options">
+        <button onClick='dropDown("fff")' class='drop-button'>
+          Select a player
+        </button>
+        <div id="dropdown" class="dropdown-content">
+        </div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="data__title">
+        Some dude's name
+      </div>
+      <div class="data__position">
+        Some dude's position
+      </div>
+      <div class="data__icon">
+      </div>
+      <div class="statistics">
+        <div class="statistic">
+          <div class="statistic__label">
+            Label
+          </div>
+          <div class="statistic__value">
+            Value
+          </div>
+        </div>
+
+        <div class="statistic">
+          <div class="statistic__label">
+            Label
+          </div>
+          <div class="statistic__value">
+            Value
+          </div>
+        </div>
+        <div class="statistic">
+          <div class="statistic__label">
+            Label
+          </div>
+          <div class="statistic__value">
+            Value
+          </div>
+        </div>
+        <div class="statistic">
+          <div class="statistic__label">
+            Label
+          </div>
+          <div class="statistic__value">
+            Value
+          </div>
+        </div>
+        <div class="statistic">
+          <div class="statistic__label">
+            Label
+          </div>
+          <div class="statistic__value">
+            Value
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <script src="js/index.js"></script>
+    <script>
+      function dropDown(x){
+        console.log(x)
+        document.getElementById("dropdown").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.drop-button')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      console.log(stats)
+
+      insertNewData(stats.players[0])
+
+      buildLinks(stats.players)
+    </script>
 </div>
 
 </body>

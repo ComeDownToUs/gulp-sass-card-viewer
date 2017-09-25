@@ -1,0 +1,109 @@
+.card{
+  background-color: red;
+  min-width: 320px;
+  max-width: 420px;
+  .card__heading{
+    height: 50%;
+    max-height: 350px;
+    background-color: #ddd;
+    padding: 16px;
+    background-position: 20% 100%;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    .card__options{
+      button{
+        width: 100%;
+        border: 1px solid black;
+        font-size: 24px;
+        &:focus{
+          outline: none;
+        }
+      }
+      .drop-button, .dropdown-content{
+        width: 100%;
+        background-color: #ddd;
+        text-align: center;
+      }
+      .drop-button{
+        padding: 8px;
+      }
+      .dropdown-content{
+        padding: 2px 0px;
+      }
+      button.dropdown-option{
+        background-color: #fff;
+        color: black;
+      }
+    }
+  }
+
+  .data{
+    position: relative;
+    >.data__title{
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      padding: 16px 16px 4px 16px;
+    }
+    >.data__position{
+      font-size: 18px;
+      color: white;
+      padding: 4px 16px 16px 16px;
+    }
+    .data__icon{
+      position: absolute;
+      top: -56px;
+      right: 32px;
+      background-color: blue;
+      height: 112px;
+      width: 112px;
+      border-radius: 56px;
+      content: '';
+    }
+    .statistics{
+      padding: 16px 0px;
+    }
+    .statistic{
+      background-color: #ccc;
+      margin: 4px 16px;
+      display: flex;
+      .statistic__label, .statistic__value{
+        padding: 8px;
+        display: inline-block;
+        flex: 5;
+      }
+      .statistic__value{
+        font-weight: bold;
+        text-align: right;
+        flex: 3;
+      }
+    }
+  }
+}
+
+.image-4148{
+  background-image: url('/images/p4148.png');
+}
+.image-2064{
+  background-image: url('/images/p2064.png');
+}
+.image-4916{
+  background-image: url('/images/p4916.png');
+}
+.image-4246{
+  background-image: url('/images/p4246.png');
+}
+.image-8983{
+  background-image: url('/images/p8983.png');
+}
+
+
+
+
+.dropdown-content{
+  display: none;
+}
+.dropdown-content.show{
+  display: block;
+}
+
