@@ -14,6 +14,7 @@ Cheats:
 - Instead of dynamically building the background image classes, I don'e them manually
 - I skipped the crest, but if I were to do it quickly I'd just clip out the relevant crests, I styled in the div and I've the ID logged so it'd be similar to the player photo
 - Somewhat hacky player selection bar with the encapsulated onclick operations
+- I used a little bit of Flexbox to save myself from more convoluted CSS/HTML, this may not be IE11 compliant but google seemed to imply they are
 
 Things I didn't get around to:
 - creating dynamic css classes for background images
@@ -22,3 +23,4 @@ Things I didn't get around to:
 - using a transpiler (this just popped into my head, really wish I thought of it earlier)
 - handling the club crest file (I assume you wanted it to do that thing where you display a particular portion of the image rather than just breaking it apart)
 - responsive design (e.g. I'd really prefer the top half remains fixed and the rest can scoll over it, this wouldn't take too long). At the moment basically imagine it's a design exclusively for phones in landscape (min width of 320px chosen due to that being iPhone 5's specs)
+- Pulling the background image effect from the PSD file
